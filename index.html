@@ -1,72 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>PORTFOLIO WEBSITE </title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <!--body-->
+        <header class="header">
+            <a href="#" class="logo">Portfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">ABOUT</a>
+                <a href="#Blog">BLOG</a>
+                <a href="#Gallery">GALLERY</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-isi">
+                <h3>Hallo,Saya</h3>
+                <h1>Prince</h1>
+                <h3>Informatics Student</h3>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxs-envelope'></i></a>
+                    <a href="#"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                </div>
+                <a href="#" class="tombol">Selengkapnya...</a>
+            </div>
+            <div class="home-img">
+                <img src="image/Home-img.jpg"  alt="">
+            </div>
+        </section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-</head>
+        <!-- about -->
+        
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="image/About-img.jpg" alt="">
+            </div>
+            <div class="about-isi">
+                <h2 class="heading">About<span>Me</span></h2>
+                <p>Saya Mahasiswa Teknik informatika Universitas Sam Ratulangi Manado saat ini saya sedang mempelajari tentang
+                    HTML, CSS, javascript Dan PHP dalam Matakuliah Pemgrograman WEB. </p>
+            </div>
+        </section>
 
-<body>
-    <header>
-        <h1>Welcome</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
 
-                <div>
-                    <a >Nama: Princenoel Wanei</a><br>
-                    <a >Alamat: Kawangkoan, Minahasa</a><br>
-                    <a >TTL : Kawangkoan 4 Desember 2004</a><br>              
+        <section class="Blog"id="Blog">
+            <h2 class="heading"><span>Blog</span></h2>
+
+            <div class="Blog-container">
+                <div class="Blog-box">
+                    <i class='bx bx-book'></i>
+                    <h3>Olahraga dan Teknologi</h3>
+                    <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, 
+                        sedang mengubah cara kita berolahraga. bagaimana teknologi seperti wearable devices dan sistem 
+                        pelacakan otomatis telah membantu atlet untuk lebih efisien, 
+                        serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan kegiatan olahraga.</p>
                 </div>
 
-            <h4 >Riwayat Pendidikan:</h4>
-
-                <div > 
-                    <a>SD : SD inpres 2009-2016</a><br>
-                    <a>SMP :SMP Negeri 5 Kawangkoan 2016-2019</a><br>
-                    <a>SMA :SMA Negeri 1 Kawangkoan 2019-2022</a><br>
-                    <a>Kuliah Teknik Informatika UNSRAT 2022 - Sekarang </a>
-                 </div>           
+                <div class="Blog-box">
+                    <i class='bx bx-book'></i>
+                    <h3>AR/VR</h3>
+                    <p>AR dan VR telah mengubah cara berinteraksi dengan dunia digital. 
+                        Sementara VR ke dalam lingkungan buatan , AR meningkatkan dunia nyata kita. 
+                         Kedua teknologi ini memiliki potensi , mulai dari penggunaan di bidang pendidikan, hiburan, 
+                         hingga industri kesehatan.
+                        </p>
+                </div>
+        
+                <div class="Blog-box">
+                    <i class='bx bx-book-open'></i>
+                    <h3>Internet of Things (IoT)</h3>
+                    <p>IoT mengacu pada jaringan fisik dari perangkat yang terhubung dan saling berkomunikasi melalui internet. 
+                        hingga mewujudkan kota pintar dengan lampu jalan yang efisien dan sistem transportasi yang terintegrasi. 
+                        Potensi IoT untuk meningkatkan efisiensi, menghemat energi, dan membuat kehidupan sehari-hari lebih nyaman.</p>
+                </div>
+            
+                
+            </div>
         </section>
 
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <p>Galeri Saya:</p>
-            <img src="Foto/Foto.png"  width="30%" height="30%">
-            <img src="Foto/Foto2.jpeg" width="30%" height="30%">
-            <img src="Foto/Foto3.png" width="30%" height="30%">
+        <section class="Gallery"id="Gallery">
+            <h2 class="heading">Gallery<span>Project</span></h2>
+            <div class="Gallery-container">
+                <div class="Gallery-box">
+                    <img src="image/Gallery-img2.jpg"alt="">
+                    <div class="Gallery-layer">
+                        <h4>Perssonal Portfolio</h4>
+                        <p>Project ini saya dapat pada MK Sem 2, dimana mendapatkan tugas untuk membuat Bio data dalam bentuk Webside. </p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="Gallery-box">
+                    <img src="image/Gallery-img1.png"alt="">
+                    <div class="Gallery-layer">
+                        <h4>Aplikasi Seller</h4>
+                        <p>Project ini saya dan teman dapat pada MK Sem 3, dimana mendapatkan tugas untuk membuat sebuah aplikasi penjualan online.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+                <div class="Gallery-box">
+                    <img src="image/Gallery-img3.jpg"alt="">
+                    <div class="Gallery-layer">
+                        <h4>Game Store</h4>
+                        <p>Project ini saya membuat website penjualan untuk game mobile dan PC, Dimana Pembeli dapat melakukan pembelian online yang cepat melalui web.</p>
+                        <a href="#"><i class='bx bx-link-external' ></i></a>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
-        <section id="blog">
-            <h2>Blog</h2>
-            <article>
-                <h3>Olahraga dan Teknologi: Membangun Masa Depan</h3>
-                <p>Artikel ini membahas tentang bagaimana teknologi, khususnya dalam bidang olahraga, 
-                sedang mengubah cara kita berolahraga.membahas tentang bagaimana teknologi seperti wearable devices dan sistem pelacakan otomatis telah membantu atlet untuk mengumpulkan dan menganalisis data mereka dengan lebih efisien, 
-                serta bagaimana ini telah mempengaruhi cara pelatih dan atlet merencanakan dan mengevaluasi kegiatan olahraga.</p>
-            </article>
+        <section class="contact"id="contact">
+            <h2 class="heading">Contact<span>ME!</span></h2>
+
+            <form action="#" name="">
+                <div class="input-box">
+                    <input  type="text" name="Name" placeholder="Nama">
+                    <input type="email" name="Email Address" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" name="Mobile Number"placeholder="Nomor">
+                    <input type="text"name="Email Subject" placeholder="Email Tujuan">
+                </div>
+                <textarea name="Your Message" id="" cols="30" rows="10"placeholder="Pesan"></textarea>
+                <input type="submit" value="Send"class="tombol">
+            </form>
+           
         </section>
 
-        <section id="contact">
-            <h2>Contact</h2>
-            <a href="https://www.facebook.com/volerw.new" >FB</a><br>
-            <a href="https://instagram.com/pntz_?igshid=ZDdkNTZiNTM="  >IG</a><br>
-            <a href="https://wa.me/+6285756095641">WA </a>
-        </section>
-    </main>
-
-</body>
-
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2024</p>
+            </div>
+        </footer>
+        
+    </body>
 </html>
