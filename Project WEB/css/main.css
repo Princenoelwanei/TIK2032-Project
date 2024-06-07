@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffffff;
+    font-family: 'Ubuntu', sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    color: #000000;
+    overflow-y: overlay;
+}
+
+
+
+.header{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 50px;
+    background-color: #c4c4c4;
+    transition: 0.3s;
+}
+.header.sticky{
+    padding-block: 10px;
+    box-shadow: inset 0 -1.5px 3px rgba(255,255,255,0.3);
+}
+.logo{
+    font-size: 45px;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+}
+nav div.bar{
+    display: none;
+    position: relative;
+    right: 80px;
+    margin-top: -10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+nav div.bar.active .open{
+    display: none;
+}
+nav div.bar .close{
+    display: none;
+}
+nav div.bar.active .close{
+    display: initial;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0 15px;
+    padding: 0 10px;
+    border-left: 1px solid #fff0;
+    border-right: 1px solid #fff0;
+    transition: 0.3s;
+}
+nav ul li:hover{
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #c2c2c2;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger .open,
+.hamburger .close {
+    font-size: 24px;
+    color: #fff;
+}
+
+.hamburger .close {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .open {
+        display: none;
+    }
+
+    .hamburger.active .close {
+        display: block;
+    }
+}
+
+
+.topHeadlines{
+    padding: 100px 50px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+.topHeadlines .left{
+    padding: 10px 30px;
+}
+.topHeadlines .left > .title{
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.topHeadlines .left .img{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(183, 183, 183);
+}
+.topHeadlines .left .img img{
+    width: 100%;
+    height: 100%;
+}
+.topHeadlines .left .text{
+    padding: 20px 15px 10px;
+}
+.topHeadlines .left .text .title a{
+    text-decoration: none;
+}
+.topHeadlines .left .text .title a h2{
+    font-size: 20px;
+    color: #000000;
+    letter-spacing: 1px;
+    display: inline;
+    cursor: pointer;
+}
+.topHeadlines .left .text .title a h2:hover{
+    text-decoration: underline;
+}
+.topHeadlines .left .text .description{
+    font-size: 15px;
+    margin-top: 10px;
+    color: #000000;
+    letter-spacing: 1px;
+}
+
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ccc;
+    padding-top: 3rem;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.news-item img {
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+
+}
+
+.news-item:last-child {
+    border-bottom: none;
+}
+
+
+
+.topHeadlines .right{
+    padding: 10px;
+    width: 1005;
+    height: 500px;
+}
+.topHeadlines .right > .title{
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+.topHeadlines .right .topNews{
+    padding: 7px;
+    height: 85%;
+    border: 1px solid #100f0f;
+    border-radius: 4px;
+    overflow-y: scroll;
+    background-color: #929292;
+}
+.topHeadlines .right .topNews .news{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-bottom: 20px;
+    
+}
+.topHeadlines .right .topNews .news .img{
+    width: 170px;
+    height: 100%;
+    max-height: 120px;
+    min-height: 90px;
+    background-color: rgb(255, 255, 255);
+}
+.topHeadlines .right .topNews .news .img img{
+    width: 100%;
+    height: 100%;
+}
+.topHeadlines .right .topNews .news .text{
+    margin-inline: 10px;
+    display: flex;
+    align-items: center;
+}
+.topHeadlines .right .topNews .news .text .title a{
+    text-decoration: none;
+}
+.topHeadlines .right .topNews .news .text .title a p{
+    color: #080707;
+    display: inline;
+}
+.topHeadlines .right .topNews .news .text .title a p:hover{
+    text-decoration: underline;
+}
+
+
+/* About Section */
+#about {
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-photo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h4 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.team-member p {
+    color: #666;
+    font-size: 0.9em;
+}
+
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sosialMedia {
+    margin-top: 20px;
+}
+
+.sosialMedia a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #555;
+    font-size: 24px;
+}
+
+.sosialMedia a:hover {
+    color: #007bff;
+}
+
+
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}

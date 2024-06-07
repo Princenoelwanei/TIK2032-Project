@@ -1,0 +1,250 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li, img, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.navbar {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+
+/* About Section: Gaya dasar untuk seluruh halaman */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container untuk berita */
+#news-container {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul section About Us */
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    color: #333;
+}
+
+/* Container tim */
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul anggota tim */
+.team h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container untuk anggota tim */
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Jarak antara anggota tim */
+}
+
+/* Gaya untuk setiap anggota tim */
+.team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Gaya untuk foto anggota tim */
+.team-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+/* Nama anggota tim */
+.team-member h4 {
+    margin: 0;
+    color: #333;
+}
+
+/* Deskripsi tim */
+.team-description {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Responsif untuk tampilan mobile */
+@media (max-width: 600px) {
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .team-member h4 {
+        font-size: 16px;
+    }
+
+    .team-description {
+        font-size: 14px;
+    }
+}
+
+
+/* Contact Section */
+#contact {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.sosialMedia {
+    margin-top: 20px;
+}
+
+.sosialMedia a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #555;
+    font-size: 24px;
+}
+
+.sosialMedia a:hover {
+    color: #007bff;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+
+/* Toggle button for mobile navigation */
+.toggle-button {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+    }
+}
